@@ -129,6 +129,10 @@ Real captured output from `docs/demo_output.txt`. Windows 11, demo mode, no API 
 
 ![Terminal output of a demo run, with the urgent tickets listed first](docs/screenshot.png)
 
+The same run with `--summary-lang es`:
+
+![Salida en terminal de una ejecución demo, con los tickets urgentes primero](docs/screenshot-es.png)
+
 ```
 PS> .venv\Scripts\python.exe triage.py data/sample_tickets.csv --out output/triaged.csv
 Demo mode: no API key found, using sample responses from fixtures/ (hand-written examples, not real model output).
