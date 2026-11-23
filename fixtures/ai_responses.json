@@ -1,0 +1,259 @@
+{
+  "_about": "Sample AI answers for data/sample_tickets.csv, used in demo mode (no API key). source=hand-written: a person wrote it to show the format; it is NOT real model output. source=recorded: saved from a real API call with --live --record. Only tickets the rules do not decide need an entry. Puentara is a fictional company.",
+  "responses": {
+    "S003": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.93,
+          "reason": "Asks about support hours."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.93,
+          "reason": "Pregunta por el horario de atención."
+        }
+      }
+    },
+    "S005": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "fees",
+          "urgency": "normal",
+          "sentiment": "neutral",
+          "confidence": 0.86,
+          "reason": "Asks why a fee was charged on an international transfer; the transfer itself went through."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "fees",
+          "urgency": "normal",
+          "sentiment": "neutral",
+          "confidence": 0.86,
+          "reason": "Pregunta por qué le cobraron una comisión en una transferencia internacional; la transferencia sí se hizo."
+        }
+      }
+    },
+    "S006": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "account_access",
+          "urgency": "normal",
+          "sentiment": "neutral",
+          "confidence": 0.55,
+          "reason": "Written in French; seems to say a code does not arrive, but I am not sure."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "account_access",
+          "urgency": "normal",
+          "sentiment": "neutral",
+          "confidence": 0.55,
+          "reason": "Está en francés; parece decir que no le llega un código, pero no estoy seguro."
+        }
+      }
+    },
+    "S008": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "transfer_failed_pending",
+          "urgency": "high",
+          "sentiment": "negative",
+          "confidence": 0.88,
+          "reason": "Main issue is a stuck transfer; the fee question is secondary."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "transfer_failed_pending",
+          "urgency": "high",
+          "sentiment": "negative",
+          "confidence": 0.88,
+          "reason": "El problema principal es una transferencia detenida; la pregunta por la comisión es secundaria."
+        }
+      }
+    },
+    "S009": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "transfer_failed_pending",
+          "urgency": "high",
+          "sentiment": "neutral",
+          "confidence": 0.9,
+          "reason": "Main issue is a pending transfer; also asks where to find a 1099."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "transfer_failed_pending",
+          "urgency": "high",
+          "sentiment": "neutral",
+          "confidence": 0.9,
+          "reason": "El problema principal es una transferencia pendiente; también pregunta dónde encontrar su 1099."
+        }
+      }
+    },
+    "S014": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "identity_verification",
+          "urgency": "high",
+          "sentiment": "neutral",
+          "confidence": 0.88,
+          "reason": "Identity verification is still pending; also asks for a 1099."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "identity_verification",
+          "urgency": "high",
+          "sentiment": "neutral",
+          "confidence": 0.88,
+          "reason": "La verificación de identidad sigue pendiente; también pide su 1099."
+        }
+      }
+    },
+    "S015": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.94,
+          "reason": "Asks if there is a plan for small teams."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.94,
+          "reason": "Pregunta si hay un plan para equipos pequeños."
+        }
+      }
+    },
+    "S019": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.9,
+          "reason": "Asks how to change the mailing address."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.9,
+          "reason": "Pregunta cómo cambiar su dirección de correspondencia."
+        }
+      }
+    },
+    "S024": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.95,
+          "reason": "Asks if a customer can have more than one account."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.95,
+          "reason": "Pregunta si se puede tener más de una cuenta."
+        }
+      }
+    },
+    "S026": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "reason": "Asks how long a new card takes to arrive in Peru."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.8,
+          "reason": "Pregunta cuánto tarda en llegar una tarjeta nueva a Perú."
+        }
+      }
+    },
+    "S028": {
+      "en": {
+        "source": "hand-written",
+        "note": "Deliberately broken (not JSON) to show the fallback path.",
+        "response": "Sure! This looks like a general question with low urgency."
+      },
+      "es": {
+        "source": "hand-written",
+        "note": "Deliberately broken (not JSON) to show the fallback path.",
+        "response": "¡Claro! Parece una pregunta general con baja urgencia."
+      }
+    },
+    "S029": {
+      "en": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.93,
+          "reason": "Asks if a customer can have more than one account."
+        }
+      },
+      "es": {
+        "source": "hand-written",
+        "response": {
+          "category": "general_question",
+          "urgency": "low",
+          "sentiment": "neutral",
+          "confidence": 0.93,
+          "reason": "Pregunta si se puede tener más de una cuenta."
+        }
+      }
+    }
+  }
+}

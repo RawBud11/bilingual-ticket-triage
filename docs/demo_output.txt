@@ -1,0 +1,126 @@
+Real captured output (not edited), bilingual-ticket-triage.
+Captured 2026-10-20 on Windows 11, Windows PowerShell, CPython 3.14.8,
+using the project's virtual environment (created with `python -m venv .venv` and
+`pip install -r requirements.txt`). Commands run as `.venv\Scripts\python.exe ...`
+(no activation needed). No .env file and no API key: demo mode. AI answers come
+from hand-written fixtures (fixtures/ai_responses.json), not from a real model.
+All tickets are synthetic. Puentara is a fictional company.
+The last block shows sample rows of output/triaged.csv from the --summary-lang es run.
+
+PS> .venv\Scripts\python.exe triage.py data/sample_tickets.csv --out output/triaged.csv
+Demo mode: no API key found, using sample responses from fixtures/ (hand-written examples, not real model output).
+
+Puentara (fictional company) - ticket triage summary
+Read 30 tickets from data\sample_tickets.csv
+Wrote output\triaged.csv
+
+URGENT - handle these first (8)
+  S001   en      Card lost or stolen          Card reported lost or stolen ("Card stolen")
+  S002   en      Account access               Possible account takeover or scam: someone else may have access ("someone get into")
+  S004   es      Card lost or stolen          Card reported lost or stolen ("robaron la tarjeta")
+  S011   es      Account access               Possible account takeover or scam: someone else may have access ("código [CODE MASKED] que no pedí")
+  S012   es      Charge dispute               Mentions fraud or a charge the customer doesn't recognize; check for fraud ("no reconozco")
+  S016   en      Card lost or stolen          Card reported lost or stolen ("Card stolen")
+  S020   es      Charge dispute               Mentions fraud or a charge the customer doesn't recognize; check for fraud ("No reconozco")
+  S030   es      Account access               Possible account takeover or scam: someone else may have access ("hackearon")
+
+Tickets per queue
+  Fraud and security               8
+  Disputes                         1
+  Account access                   3
+  Payments                         3
+  Billing and tax forms            5
+  Tech support                     2
+  General                          8
+
+Decided by
+  rules                           18
+  AI                              10
+  fallback (needs review)          2
+
+Needs review (2)
+  S006   other   The AI was not sure (confidence 0.55 < 0.70); a person should check
+  S028   en      AI answer missing or invalid (not valid JSON); a person should check
+
+Tickets with card numbers or codes masked: 3
+Tickets that need a human: 22 of 30
+
+PS> .venv\Scripts\python.exe triage.py data/sample_tickets.csv --out output/triaged.csv --summary-lang es
+Modo demo: no se encontró una clave de API, se usan respuestas de ejemplo de fixtures/ (ejemplos escritos a mano, no son respuestas reales del modelo).
+
+Puentara (empresa ficticia) - resumen de clasificación de tickets
+Se leyeron 30 tickets de data\sample_tickets.csv
+Se escribió output\triaged.csv
+
+URGENTES - atiéndelos primero (8)
+  S001   en      Tarjeta perdida o robada     Reporta una tarjeta perdida o robada ("Card stolen")
+  S002   en      Acceso a la cuenta           Posible robo de cuenta o estafa: alguien más podría tener acceso ("someone get into")
+  S004   es      Tarjeta perdida o robada     Reporta una tarjeta perdida o robada ("robaron la tarjeta")
+  S011   es      Acceso a la cuenta           Posible robo de cuenta o estafa: alguien más podría tener acceso ("código [CODE MASKED] que no pedí")
+  S012   es      Disputa de cargo             Menciona fraude o un cargo que no reconoce; revisa si es fraude ("no reconozco")
+  S016   en      Tarjeta perdida o robada     Reporta una tarjeta perdida o robada ("Card stolen")
+  S020   es      Disputa de cargo             Menciona fraude o un cargo que no reconoce; revisa si es fraude ("No reconozco")
+  S030   es      Acceso a la cuenta           Posible robo de cuenta o estafa: alguien más podría tener acceso ("hackearon")
+
+Tickets por cola
+  Fraude y seguridad               8
+  Disputas                         1
+  Acceso a la cuenta               3
+  Pagos                            3
+  Cobros y formularios fiscales    5
+  Soporte técnico                  2
+  General                          8
+
+Decidido por
+  reglas                          18
+  IA                              10
+  sin decidir (por revisar)        2
+
+Por revisar (2)
+  S006   other   La IA no estaba segura (confianza 0.55 < 0.70); una persona debe revisarlo
+  S028   en      La respuesta de la IA falta o no es válida (no es JSON válido); una persona debe revisarlo
+
+Tickets con números de tarjeta o códigos ocultos: 3
+Tickets que necesitan a una persona: 22 de 30
+
+PS> .venv\Scripts\python.exe evaluate.py
+Synthetic sample data (template-generated). These numbers show the tool works on this test set, not how accurate it would be on real tickets.
+Mode: rules layer only (demo, no API calls). Run with --live for full-pipeline numbers.
+
+  Tickets in test set                           150
+  Rules coverage (decided by rules)             132/150 (88.0%)
+  Category accuracy, rule-decided tickets       132/132 (100.0%)
+  Urgency accuracy, rule-decided tickets        132/132 (100.0%)
+  Urgent-ticket recall (rules alone)            38/39 (97.4%)
+
+Misses (1)
+  T148  expected: card_lost_stolen/urgent  got: -/normal (not decided)
+        Se me perdió la trajeta en el taxi, necesito una nueva.
+
+PS> .venv\Scripts\python.exe evaluate.py --summary-lang es
+Datos sintéticos de ejemplo (generados con plantillas). Estos números muestran que la herramienta funciona con este conjunto de prueba, no su precisión con tickets reales.
+Modo: solo la capa de reglas (demo, sin llamadas a la API). Usa --live para medir todo el proceso.
+
+  Tickets en el conjunto de prueba              150
+  Cobertura de reglas (decididos por reglas)    132/150 (88.0%)
+  Precisión de categoría, decididos por reglas  132/132 (100.0%)
+  Precisión de urgencia, decididos por reglas   132/132 (100.0%)
+  Urgentes detectados (solo reglas)             38/39 (97.4%)
+
+No acertados (1)
+  T148  esperado: card_lost_stolen/urgent  obtenido: -/normal (sin decidir)
+        Se me perdió la trajeta en el taxi, necesito una nueva.
+
+PS> .venv\Scripts\python.exe -m pytest -q
+........................................................................ [ 36%]
+........................................................................ [ 72%]
+.......................................................                  [100%]
+199 passed in 7.30s
+
+PS> Get-Content output\triaged.csv -Encoding UTF8 | Select-String -Pattern '^ticket_id|^S004|^S006|^S009|^S011|^S028'
+ticket_id,created_at,channel,subject,body,language,category,urgency,sentiment,queue,needs_human,needs_review,decided_by,confidence,reason,sensitive_data_masked
+S004,2026-10-12 09:28,web_form,Tarjeta robada,"Me robaron la tarjeta en el metro. El número es [CARD NUMBER MASKED] y el CVV [CODE MASKED], por favor bloquéenla.",es,card_lost_stolen,urgent,,fraud_security,true,false,rule,,"Reporta una tarjeta perdida o robada (""robaron la tarjeta"")",true
+S006,2026-10-12 10:21,email,Bonjour,"Bonjour, je n'arrive pas à recevoir mon code. Merci.",other,,normal,neutral,general,true,true,fallback,0.55,La IA no estaba segura (confianza 0.55 < 0.70); una persona debe revisarlo,false
+S009,2026-10-12 11:33,chat,Pending + tax form,"My transfer to QuickRide Co is still pending. Also, where do I find my 1099?",en,transfer_failed_pending,high,neutral,payments,true,false,ai,0.90,El problema principal es una transferencia pendiente; también pregunta dónde encontrar su 1099.,false
+S011,2026-10-12 12:00,web_form,,Me llegó un código [CODE MASKED] que no pedí y ahora mi contraseña no funciona.,es,account_access,urgent,,fraud_security,true,false,rule,,"Posible robo de cuenta o estafa: alguien más podría tener acceso (""código [CODE MASKED] que no pedí"")",true
+S028,2026-10-12 18:15,web_form,,Can I have more than one Puentara account?,en,,normal,,general,true,true,fallback,,La respuesta de la IA falta o no es válida (no es JSON válido); una persona debe revisarlo,false

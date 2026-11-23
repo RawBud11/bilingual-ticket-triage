@@ -1,0 +1,151 @@
+﻿ticket_id,created_at,channel,subject,body,expected_category,expected_urgency,template_language
+T001,2026-10-12 08:08,web_form,Problem with my account,My tranfser of $392.75 to StreamBox Plus has been pending since Sep 12.,transfer_failed_pending,high,en
+T002,2026-10-12 08:25,email,Urgente,me hicieron un charge que no reconozco de $841.87,charge_dispute,urgent,es
+T003,2026-10-12 08:43,email,Help,How do I change my mailing address?,general_question,low,en
+T004,2026-10-12 09:06,chat,Urgente,¡gracias por la ayuda de ayer!,general_question,low,es
+T005,2026-10-12 09:30,web_form,Puentara app,I changed my phone and now I don't get the login code.,account_access,high,en
+T006,2026-10-12 10:02,chat,,¿Por qué me cobraron una comisión de $1.99 el 3 de octubre?,fees,normal,es
+T007,2026-10-12 10:15,web_form,,When will tax documents be available?,tax_forms,normal,en
+T008,2026-10-12 10:27,web_form,Pregunta,Libros Tinta me cobró dos veces $883.20 el 21 de septiembre. Quiero que me devuelvan uno.,charge_dispute,high,es
+T009,2026-10-12 10:59,email,Urgent,Do you have a plan for small teams?,general_question,low,en
+T010,2026-10-12 11:05,chat,,La transferencia no ha llegado y ya pasaron 3 días.,transfer_failed_pending,high,es
+T011,2026-10-12 11:39,chat,Puentara app,Card stolen. Need it frozen NOW.,card_lost_stolen,urgent,en
+T012,2026-10-12 11:51,web_form,Urgente,mi verificación de identidad sigue pendiente,identity_verification,high,es
+T013,2026-10-12 12:02,web_form,Problem with my account,I don't recognize a $436.01 payment to Ferretería La Tuerca on Sep 14.,charge_dispute,urgent,en
+T014,2026-10-12 12:12,chat,Ayuda,LA TRANSFERENCIA NO HA LLEGADO Y YA PASARON 3 DÍAS.,transfer_failed_pending,high,es
+T015,2026-10-12 12:48,web_form,Urgent,I got a code 311926 I never asked for and now my password doesn't work.,account_access,urgent,en
+T016,2026-10-12 13:06,web_form,App de Puentara,no puedo entrar a mi cuenta desde el 10 de octubre,account_access,high,es
+T017,2026-10-12 13:40,web_form,,"There's a charge of $296.55 from Libros Tinta that I didn't make. Please help. Also, is there a fee for this?",charge_dispute,urgent,en
+T018,2026-10-12 13:48,chat,Problema con mi cuenta,"Alguien cambio el correo de mi cuenta, creo que me hackearon.",account_access,urgent,es
+T019,2026-10-12 13:56,chat,,"There's a charge of $735.25 from QuickRide Co that I didn't make. Please help. Also, what are your support hours?",charge_dispute,urgent,en
+T020,2026-10-12 14:36,web_form,Ayuda,"ME HACKEARON LA CUENTA, AYUDA URGENTE",account_access,urgent,es
+T021,2026-10-12 15:05,email,,Where can I download my 1099 for last year?,tax_forms,normal,en
+T022,2026-10-12 15:36,email,,me hicieron un charge que no reconozco de $92.29,charge_dispute,urgent,es
+T023,2026-10-12 16:12,web_form,Help,I got an email saying my password was changed but I didn't change it. Now I can't log in.,account_access,urgent,en
+T024,2026-10-12 16:35,chat,Pregunta,mi transferencia está pendiente,transfer_failed_pending,high,es
+T025,2026-10-12 17:04,chat,Puentara app,Why was I chargde a $9.00 fee on Sep 14?,fees,normal,en
+T026,2026-10-12 17:16,web_form,Urgente,mi verificación de identidad sigue pendiente,identity_verification,high,es
+T027,2026-10-12 17:34,email,Urgent,The Documents button does nothing when I tap it.,app_bug,normal,en
+T028,2026-10-12 17:46,email,App de Puentara,La app me pide una selfie para verificar mi identidad y siempre falla.,identity_verification,high,es
+T029,2026-10-12 18:16,web_form,Urgent,"I sent $652.46 and it says failed, but the money left my balance. Also, what are your uspport hours?",transfer_failed_pending,high,en
+T030,2026-10-12 18:29,web_form,Problema con mi cuenta,Rechazaron mi verificación de identidad y no sé por qué.,identity_verification,high,es
+T031,2026-10-12 19:01,web_form,Question,I can't find my debit card anywhere and I think someone took it. The number is 0000 7961 9559 2986.,card_lost_stolen,urgent,en
+T032,2026-10-12 19:40,web_form,Urgente,Rehcazaron mi verificacion de identidad y no se por que.,identity_verification,high,es
+T033,2026-10-12 20:00,web_form,Urgent,"I'd like to dispute a charge of $798.65 from PixelPrint Studio, the service was never delivered.",charge_dispute,high,en
+T034,2026-10-12 20:07,email,Pregunta,Olvide mi contraseña y no me llgea el correo para restablecerla.,account_access,high,es
+T035,2026-10-12 20:37,web_form,Urgent,"I sent $176.09 and it says failed, but the omney left my balance.",transfer_failed_pending,high,en
+T036,2026-10-12 21:04,web_form,App de Puentara,"Envié $598.87 y dice que falló, pero el dinero ya no está en mi saldo.",transfer_failed_pending,high,es
+T037,2026-10-12 21:37,web_form,,Do I need to fill out a W-8BEN? I live in Colombia.,tax_forms,normal,en
+T038,2026-10-12 21:47,chat,Ayuda,¿Cuanto tarda la verificacion? Subi mi pasaporte el 8 de septiembre.,identity_verification,high,es
+T039,2026-10-12 22:06,web_form,Urgent,"Someone used my card online at Mercado Sol y Luna. My card is 0000058850872454, CVV 460.",charge_dispute,urgent,en
+T040,2026-10-12 22:35,email,Ayuda,No encuentro mi tarjeta y creo que alguien la tomó. Termina en 8814.,card_lost_stolen,urgent,es
+T041,2026-10-12 22:59,email,Problem with my account,Someone changed the emial on my account. I think I was hacked.,account_access,urgent,en
+T042,2026-10-12 23:08,web_form,Ayuda,"Mercado Sol y Luna me cobró dos veces $163.49 el 19 de septiembre. Quiero que me devuelvan uno. Otra cosa, ¿cuál es el horario de atención?",charge_dispute,high,es
+T043,2026-10-12 23:11,web_form,Help,veriifcation stuck on pending for a week,identity_verification,high,en
+T044,2026-10-12 23:24,web_form,,La transferencia no ha llegado y ya pasaron 3 días.,transfer_failed_pending,high,es
+T045,2026-10-12 23:43,email,,Card stolen. Need it frozen NOW.,card_lost_stolen,urgent,en
+T046,2026-10-12 23:48,web_form,App de Puentara,¿Tienen un plan para equipos pequeños?,general_question,low,es
+T047,2026-10-13 00:25,chat,Problem with my account,thanks for the help yesterday!,general_question,low,en
+T048,2026-10-13 00:33,chat,App de Puentara,¿Cuánto cuesta enviar dinero a Colombia?,fees,normal,es
+T049,2026-10-13 01:07,chat,Problem with my account,When will tax documents be available?,tax_forms,normal,en
+T050,2026-10-13 01:46,chat,Urgente,¿Tengo que llenar el W-8BEN? Vivo en Mexico.,tax_forms,normal,es
+T051,2026-10-13 02:05,web_form,,The Home button does nothing when I tap it.,app_bug,normal,en
+T052,2026-10-13 02:43,chat,,Rechazaron mi verificación de identidad y no sé por qué.,identity_verification,high,es
+T053,2026-10-13 02:57,web_form,,"Someone stole my card at the gym, can you send me a new one?",card_lost_stolen,urgent,en
+T054,2026-10-13 03:27,web_form,Urgente,Mi transferencia de $631.44 a Café Arbolito sigue pendiente desde el 7 de octubre.,transfer_failed_pending,high,es
+T055,2026-10-13 04:06,chat,Urgent,Card stolen. Need it frozen NOW.,card_lost_stolen,urgent,en
+T056,2026-10-13 04:40,chat,Urgente,¿Cuál es el horario de atención?,general_question,low,es
+T057,2026-10-13 05:09,email,Help,UNAUTHORIZED CHARGE ON MY ACCOUNT $707.04!!!,charge_dispute,urgent,en
+T058,2026-10-13 05:16,email,Urgente,Cambie de celular y ya no me llega el codigo para entrar.,account_access,high,es
+T059,2026-10-13 05:27,chat,Puentara app,I forgot my password and the reset email never arrives.,account_access,high,en
+T060,2026-10-13 05:34,email,Problema con mi cuenta,¿cuando salen los documentos de impuestos?,tax_forms,normal,es
+T061,2026-10-13 06:13,email,Question,Is there a fee for international transfers?,fees,normal,en
+T062,2026-10-13 06:29,chat,Problema con mi cuenta,"Alguien cambió el correo de mi cuenta, creo que me hackearon.",account_access,urgent,es
+T063,2026-10-13 07:02,email,Help,transfer stcuk,transfer_failed_pending,high,en
+T064,2026-10-13 07:11,email,Pregunta,Me llegó un código 973758 que no pedí y ahora mi contraseña no funciona.,account_access,urgent,es
+T065,2026-10-13 07:43,email,Urgent,I see a monthly fee I didn't expect.,fees,normal,en
+T066,2026-10-13 08:08,chat,Urgente,¿cuando salen los documentos de impuestos?,tax_forms,normal,es
+T067,2026-10-13 08:30,web_form,Puentara app,UNAUTHORIZED CHARGE ON MY ACCOUNT $476.84!!!,charge_dispute,urgent,en
+T068,2026-10-13 09:03,chat,App de Puentara,¿Cuánto tarda la verificación? Subí mi paspaorte el 17 de septiembre.,identity_verification,high,es
+T069,2026-10-13 09:15,email,Help,"I sent $765.76 and it says failed, but the money left my balance.",transfer_failed_pending,high,en
+T070,2026-10-13 09:33,chat,App de Puentara,mi transferencia esta pendiente,transfer_failed_pending,high,es
+T071,2026-10-13 10:02,web_form,Problem with my account,I returned an order to PixelPrint Studio and never got my refund of $317.15.,charge_dispute,high,en
+T072,2026-10-13 10:21,email,,cuanto es la comision por retiro,fees,normal,es
+T073,2026-10-13 10:27,email,Urgent,Is there a fee for international transfers?,fees,normal,en
+T074,2026-10-13 10:33,chat,Urgente,Rechazaron mi verificación de identidad y no sé por qué.,identity_verification,high,es
+T075,2026-10-13 10:56,email,Question,MY ACCOUNT IS LOCKED AFTER TOO MANY ATTEMPTS.,account_access,high,en
+T076,2026-10-13 11:14,web_form,Problema con mi cuenta,LA APP ME PIDE UNA SELFIE PARA VERIFICAR MI IDENTIDAD Y SIEMPRE FALLA.,identity_verification,high,es
+T077,2026-10-13 11:27,web_form,Question,I can't find my debit card anywhere and I think someone took it. The number is 0000 3806 8062 3653.,card_lost_stolen,urgent,en
+T078,2026-10-13 11:31,chat,,El boton de Ajustes no hace nada cuando lo toco.,app_bug,normal,es
+T079,2026-10-13 11:45,email,Question,When will tax documetns be available?,tax_forms,normal,en
+T080,2026-10-13 12:01,email,Pregunta,Pantalla en blanco después de la última actualización.,app_bug,normal,es
+T081,2026-10-13 12:30,chat,,Do you have a plan for small teams?,general_question,low,en
+T082,2026-10-13 13:08,chat,Problema con mi cuenta,Devolví un pedido a Café Arbolito y nunca me llegó el reemoblso de $477.46.,charge_dispute,high,es
+T083,2026-10-13 13:33,email,Help,My transfer of $47.88 to Libros Tinta has been pending since Sep 13.,transfer_failed_pending,high,en
+T084,2026-10-13 13:54,chat,Urgente,"Envie $821.82 y dice que fallo, pero el dinero ya no esta en mi saldo.",transfer_failed_pending,high,es
+T085,2026-10-13 14:11,web_form,,The Carsd button does nothing when I tap it.,app_bug,normal,en
+T086,2026-10-13 14:47,web_form,Ayuda,"TARJETA ROBADA, BLOQUÉENLA POR FAVOR",card_lost_stolen,urgent,es
+T087,2026-10-13 14:51,email,Problem with my account,"Can't log in, the app keeps saying invalid credentials.",account_access,high,en
+T088,2026-10-13 15:24,web_form,Pregunta,No encuentro mi tarjeta y creo que alguien la tomó. Termina en 7645.,card_lost_stolen,urgent,es
+T089,2026-10-13 15:58,chat,Problem with my account,There's a charge of $539.53 from Mercado Sol y Luna that I didn't make. Please help.,charge_dispute,urgent,en
+T090,2026-10-13 16:17,web_form,,¡gracias por la ayuda de ayer!,general_question,low,es
+T091,2026-10-13 16:35,web_form,Urgent,The app keeps asking me for a selfie to verify my identity and it fails.,identity_verification,high,en
+T092,2026-10-13 17:12,email,App de Puentara,DEVOLVÍ UN PEDIDO A QUICKRIDE CO Y NUNCA ME LLEGÓ EL REEMBOLSO DE $377.24.,charge_dispute,high,es
+T093,2026-10-13 17:31,web_form,Help,My wallet was stolen this morning with my card inside. What do I do?,card_lost_stolen,urgent,en
+T094,2026-10-13 17:34,email,Ayuda,¿cuando salne los documentos de impuestos?,tax_forms,normal,es
+T095,2026-10-13 17:52,email,Puentara app,"I don't recognize a $255.23 payment to PixelPrint Studio on Sep 03. Also, where do I find my 1099?",charge_dispute,urgent,en
+T096,2026-10-13 18:32,web_form,Ayuda,Mercado Sol y Luna me cobró dos vecse $653.56 el 13 de septiembre. Quiero que me devuelvan uno.,charge_dispute,high,es
+T097,2026-10-13 19:01,email,Help,My identity verification was rejected and I don't know why.,identity_verification,high,en
+T098,2026-10-13 19:20,email,Urgente,"me hackearon la cuenta, ayuda urgente. Otra cosa, ¿dónde encuentro mi 1099?",account_access,urgent,es
+T099,2026-10-13 19:59,web_form,Puentara app,I was charged twice by Mercado Sol y Luna on Sep 21 for $770.18. I want one refunded.,charge_dispute,high,en
+T100,2026-10-13 20:13,web_form,Ayuda,Rechazaron mi verificacion de identidad y no se por que.,identity_verification,high,es
+T101,2026-10-13 20:47,email,Puentara app,"My account was hacked, there are logisn from a phone I don't own. Also, is there a fee for this?",account_access,urgent,en
+T102,2026-10-13 20:55,email,,mi verificación de identidad sigue pendiente,identity_verification,high,es
+T103,2026-10-13 21:17,email,Problem with my account,I changed my phone and now I don't get the login code.,account_access,high,en
+T104,2026-10-13 21:52,chat,Pregunta,"TARJETA ROBADA, BLOQUÉENLA POR FAVOR. Otra cosa, ¿cuál es el horraio de atención?",card_lost_stolen,urgent,es
+T105,2026-10-13 22:27,chat,Question,How much does it cost to send money to Mexico?,fees,normal,en
+T106,2026-10-13 22:48,email,Ayuda,"Alguien usó mi tarjeta en PixelPrint Studio. Mi tarjeta es 0000714107610908, CVV 652. Otra cosa, la app se cerró dos veces hoy.",charge_dispute,urgent,es
+T107,2026-10-13 23:02,email,,Can I have more than one Punetara account?,general_question,low,en
+T108,2026-10-13 23:05,chat,App de Puentara,cuánto es la comisión por retiro,fees,normal,es
+T109,2026-10-13 23:15,web_form,Help,The app crashes every time I open the Send money screen.,app_bug,normal,en
+T110,2026-10-13 23:38,chat,Urgente,Mi cuenta esta bloqueada por demasiados intentos.,account_access,high,es
+T111,2026-10-14 00:16,email,Urgent,I was charged twice by PixelPrint Studio on Oct 08 for $72.08. I want one refunded.,charge_dispute,high,en
+T112,2026-10-14 00:52,email,App de Puentara,¿Como cambio mi direccion de correspondencia?,general_question,low,es
+T113,2026-10-14 01:23,chat,,"Can't log in, the app keeps saying invalid credentials.",account_access,high,en
+T114,2026-10-14 01:43,email,,¿Cuanto tarda la verificacion? Subi mi pasaporte el 1 de septiembre.,identity_verification,high,es
+T115,2026-10-14 02:05,chat,Question,The app keeps asking me for a slefie to verify my identity and it fails.,identity_verification,high,en
+T116,2026-10-14 02:25,email,Problema con mi cuenta,Me robaron la cartera con la tarjeta adentro. ¿Qué hago?,card_lost_stolen,urgent,es
+T117,2026-10-14 02:30,email,Problem with my account,"I'd like to dispute a charge of $432.33 from Libros Tinta, the service was never delivered.",charge_dispute,high,en
+T118,2026-10-14 03:08,chat,Urgente,La app me pide una selfie para verificar mi identidad y siempre falla.,identity_verification,high,es
+T119,2026-10-14 03:47,chat,Problem with my account,Blank screen after the last update.,app_bug,normal,en
+T120,2026-10-14 03:50,chat,Ayuda,¿Por que me cobraron una comision de $4.99 el 8 de octubre?,fees,normal,es
+T121,2026-10-14 04:07,web_form,Urgent,The app keeps asking me for a selfie to verify my identity and it fails.,identity_verification,high,en
+T122,2026-10-14 04:24,web_form,Pregunta,"Envié $55.02 y dice que falló, pero el dinero ya no está en mi saldo.",transfer_failed_pending,high,es
+T123,2026-10-14 04:58,email,Help,Why was I charged a $2.50 fee on Oct 16?,fees,normal,en
+T124,2026-10-14 05:03,web_form,App de Puentara,"Me llego un correo de que cambiaron mi contraseña pero yo no fui. Ya no puedo entrar. Otra cosa, ¿donde encuentro mi 1099?",account_access,urgent,es
+T125,2026-10-14 05:08,web_form,Help,Card stolen. Need it frozen NOW.,card_lost_stolen,urgent,en
+T126,2026-10-14 05:33,email,Pregunta,"cancelé la suscripción de Ferretería La Tuerca y me siguen cobrando, quiero mi reembolso",charge_dispute,high,es
+T127,2026-10-14 05:36,web_form,Help,"There's a charge of $672.87 from PixelPrint Studio that I didn't make. Please help. Also, what are your support hours?",charge_dispute,urgent,en
+T128,2026-10-14 06:03,web_form,Pregunta,RECHAZARON MI VERIFICACIÓN DE IDENTIDAD Y NO SÉ POR QUÉ.,identity_verification,high,es
+T129,2026-10-14 06:17,web_form,Problem with my account,Why was I charged a $9.00 fee on Sep 27?,fees,normal,en
+T130,2026-10-14 06:26,web_form,,Mi transferencia de $350.21 a eMrcado Sol y Luna sigue pendiente desde el 9 de septiembre.,transfer_failed_pending,high,es
+T131,2026-10-14 06:48,email,Urgent,Why was I charged a $2.50 fee on Sep 16?,fees,normal,en
+T132,2026-10-14 07:27,web_form,Problema con mi cuenta,¿Tengo que llenar el W-8BEN? Vivo en Mexico.,tax_forms,normal,es
+T133,2026-10-14 07:44,chat,Help,I changed my phone and now I don't get the login code.,account_access,high,en
+T134,2026-10-14 08:06,email,,Hay un cargo de $597.49 de Mercado Sol y Luna que yo no hice.,charge_dispute,urgent,es
+T135,2026-10-14 08:21,email,Urgent,I got a code 578601 I never asked for and now my password doesn't work.,account_access,urgent,en
+T136,2026-10-14 08:52,email,,¿Cuánto cuesta enviar dinero a Colombia?,fees,normal,es
+T137,2026-10-14 09:03,chat,Problem with my account,Where can I download my 1099 for last year?,tax_forms,normal,en
+T138,2026-10-14 09:41,email,Urgente,mi verificación de identidad sigue pendiente,identity_verification,high,es
+T139,2026-10-14 09:49,web_form,,"Someone stole my card at the gym, can you send me a new one?",card_lost_stolen,urgent,en
+T140,2026-10-14 10:26,email,Problema con mi cuenta,"cancelé la suscripción de QuickRide Co y me siguen cobrando, quiero mi reembolso",charge_dispute,high,es
+T141,2026-10-14 10:38,email,Question,The app crashes evrey time I open the Home screen.,app_bug,normal,en
+T142,2026-10-14 11:02,email,Ayuda,"Quiero disputar un cargo de $276.98 de Mercado Sol y Luna, nunca recibi el servicio.",charge_dispute,high,es
+T143,2026-10-14 11:30,email,Puentara app,The app crashes every time I open the Home screen.,app_bug,normal,en
+T144,2026-10-14 12:08,chat,Urgente,Mercado Sol y Luna me cobró dos veces $331.14 el 20 de septiembre. Quiero que me devuelvan uno.,charge_dispute,high,es
+T145,2026-10-14 12:19,email,Help,Do I need to fill out a W-8BEN? I live in Colombia.,tax_forms,normal,en
+T146,2026-10-14 12:58,email,Problema con mi cuenta,Mi formulario de impuestos tiene la dirección equivocada.,tax_forms,normal,es
+T147,2026-10-14 13:20,web_form,,My identity verification was rejected and I don't know why.,identity_verification,high,en
+T148,2026-10-14 13:40,email,App de Puentara,"Se me perdió la trajeta en el taxi, necesito una nueva.",card_lost_stolen,urgent,es
+T149,2026-10-14 14:09,email,Puentara app,verification stuck on pending for a week,identity_verification,high,en
+T150,2026-10-14 14:18,chat,,La transferencia no ha llegado y ya pasaron 3 días.,transfer_failed_pending,high,es
