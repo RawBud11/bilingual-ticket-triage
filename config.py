@@ -10,7 +10,7 @@ PROJECT_DIR = Path(__file__).resolve().parent
 # --- Claude API -------------------------------------------------------------
 # Used when ANTHROPIC_MODEL is not set in .env. A small, fast model is enough
 # for sorting tickets into a fixed list of categories.
-DEFAULT_MODEL = "claude-haiku-5-5"
+DEFAULT_MODEL = "claude-haiku-4-5"
 AI_TIMEOUT_SECONDS = 30
 AI_MAX_TOKENS = 300
 # AI answers below this confidence are not trusted: the ticket goes to review.

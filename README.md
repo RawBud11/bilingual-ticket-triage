@@ -103,7 +103,7 @@ Then edit `.env`:
 
 ```
 ANTHROPIC_API_KEY=your-key-here
-ANTHROPIC_MODEL=claude-haiku-5-5
+ANTHROPIC_MODEL=claude-haiku-4-5
 ```
 
 Real API calls only happen when you add `--live`. A key in `.env` alone does not turn them on.
@@ -141,7 +141,7 @@ URGENT - handle these first (8)
   S001   en      Card lost or stolen          Card reported lost or stolen ("Card stolen")
   S002   en      Account access               Possible account takeover or scam: someone else may have access ("someone get into")
   S004   es      Card lost or stolen          Card reported lost or stolen ("robaron la tarjeta")
-  S011   es      Account access               Possible account takeover or scam: someone else may have access ("cÃ³digo [CODE MASKED] que no pedÃ­")
+  S011   es      Account access               Possible account takeover or scam: someone else may have access ("código [CODE MASKED] que no pedí")
   S012   es      Charge dispute               Mentions fraud or a charge the customer doesn't recognize; check for fraud ("no reconozco")
   S016   en      Card lost or stolen          Card reported lost or stolen ("Card stolen")
   S020   es      Charge dispute               Mentions fraud or a charge the customer doesn't recognize; check for fraud ("No reconozco")
@@ -175,15 +175,15 @@ The "AI" count here comes from the hand-written fixtures, not from a real model.
 
 ```
 PS> .venv\Scripts\python.exe triage.py data/sample_tickets.csv --out output/triaged.csv --summary-lang es
-Modo demo: no se encontrÃ³ una clave de API, se usan respuestas de ejemplo de fixtures/ (ejemplos escritos a mano, no son respuestas reales del modelo).
+Modo demo: no se encontró una clave de API, se usan respuestas de ejemplo de fixtures/ (ejemplos escritos a mano, no son respuestas reales del modelo).
 
-Puentara (empresa ficticia) - resumen de clasificaciÃ³n de tickets
+Puentara (empresa ficticia) - resumen de clasificación de tickets
 Se leyeron 30 tickets de data\sample_tickets.csv
-Se escribiÃ³ output\triaged.csv
+Se escribió output\triaged.csv
 
-URGENTES - atiÃ©ndelos primero (8)
+URGENTES - atiéndelos primero (8)
   S001   en      Tarjeta perdida o robada     Reporta una tarjeta perdida o robada ("Card stolen")
-  S002   en      Acceso a la cuenta           Posible robo de cuenta o estafa: alguien mÃ¡s podrÃ­a tener acceso ("someone get into")
+  S002   en      Acceso a la cuenta           Posible robo de cuenta o estafa: alguien más podría tener acceso ("someone get into")
   S004   es      Tarjeta perdida o robada     Reporta una tarjeta perdida o robada ("robaron la tarjeta")
   ...
 ```
@@ -193,14 +193,14 @@ URGENTES - atiÃ©ndelos primero (8)
 The customer typed their full card number and CVV into the ticket:
 
 ```
-Me robaron la tarjeta en el metro. El nÃºmero es 0000 1043 3218 1960 y el CVV 529, por favor bloquÃ©enla.
+Me robaron la tarjeta en el metro. El número es 0000 1043 3218 1960 y el CVV 529, por favor bloquéenla.
 ```
 
 The row written to `output/triaged.csv` (from the `--summary-lang es` run):
 
 ```
 ticket_id,created_at,channel,subject,body,language,category,urgency,sentiment,queue,needs_human,needs_review,decided_by,confidence,reason,sensitive_data_masked
-S004,2026-10-12 09:28,web_form,Tarjeta robada,"Me robaron la tarjeta en el metro. El nÃºmero es [CARD NUMBER MASKED] y el CVV [CODE MASKED], por favor bloquÃ©enla.",es,card_lost_stolen,urgent,,fraud_security,true,false,rule,,"Reporta una tarjeta perdida o robada (""robaron la tarjeta"")",true
+S004,2026-10-12 09:28,web_form,Tarjeta robada,"Me robaron la tarjeta en el metro. El número es [CARD NUMBER MASKED] y el CVV [CODE MASKED], por favor bloquéenla.",es,card_lost_stolen,urgent,,fraud_security,true,false,rule,,"Reporta una tarjeta perdida o robada (""robaron la tarjeta"")",true
 ```
 
 The card number and CVV never reach the rules, the AI or the output file. (The card numbers in the sample data are made up and start with `0000`, which no real card does.)
@@ -220,7 +220,7 @@ Mode: rules layer only (demo, no API calls). Run with --live for full-pipeline n
 
 Misses (1)
   T148  expected: card_lost_stolen/urgent  got: -/normal (not decided)
-        Se me perdiÃ³ la trajeta en el taxi, necesito una nueva.
+        Se me perdió la trajeta en el taxi, necesito una nueva.
 ```
 
 **Read these numbers carefully.** The test set is **template-generated synthetic data**. These numbers show the tool works on this set. They are not real-world accuracy.
@@ -297,7 +297,7 @@ This is a demo project. It does not claim any compliance certification.
 ## Limitations
 
 - **Masking covers card numbers, CVVs and one-time codes only.** It does not mask names, emails, addresses, or passwords typed in plain text.
-- **The code mask is deliberately broad.** It also hides harmless numbers after words like "code" or "cÃ³digo", such as "error code 5003" or "cÃ³digo postal 11000". Hiding too much is safer than too little.
+- **The code mask is deliberately broad.** It also hides harmless numbers after words like "code" or "código", such as "error code 5003" or "código postal 11000". Hiding too much is safer than too little.
 - **Fraud mentions over-escalate on purpose.** "How do I report fraud?" is marked urgent. That is the safe direction: a person can lower it in seconds, but a missed fraud case costs much more.
 - **Only English and Spanish.** Language detection is word counting. Portuguese can be read as Spanish. Anything else is marked `other` and goes to review.
 - **Typos can slip past the rules**, like "trajeta" in T148. In live mode, the AI would see those tickets.
@@ -307,7 +307,7 @@ This is a demo project. It does not claim any compliance certification.
 
 ## Ideas for next steps
 
-- Mask "my password is ..." and "mi contraseÃ±a es ..." phrases.
+- Mask "my password is ..." and "mi contraseña es ..." phrases.
 - Write one CSV per queue, so each team opens only its own tickets.
 - Read richer Zendesk or Freshdesk exports (tags, requester language) and use them as hints.
 - Connect to a helpdesk API to tag tickets as they arrive.
